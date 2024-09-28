@@ -23,12 +23,12 @@ public class TP1_guessMyNumber_ESPANOL {
        /* choix de la difficulté*/
         int diff=0;
         Scanner sc= new Scanner (System.in);
-        System.out.println("Bonjour, veuyez choisir une difficulte \n1) Facile \n2) Normal \n3) Difficile \n4) Cauchemar");
+        System.out.println("Bonjour, veuyez choisir une difficulte \n1) Facile \n2) Normal \n3) Difficile ");
         diff=sc.nextInt();
         
-        while (diff>4 || diff<=0){
+        while (diff>3 || diff<=0){
             System.out.println("erreur de saisie");
-            System.out.println("Veuyez choisir une difficulte \n1) Facile \n2) Normal \n3) Difficile \n4) Cauchemar");
+            System.out.println("Veuyez choisir une difficulte \n1) Facile \n2) Normal \n3) Difficile ");
             diff=sc.nextInt();    
         }
         
@@ -113,14 +113,14 @@ public class TP1_guessMyNumber_ESPANOL {
         }
         if (diff==3){
             Random generateurAleat = new Random();
-            int n = generateurAleat.nextInt(100);
+            int n = generateurAleat.nextInt(200);
             System.out.println(n);
             /*demande d'une valeur à l'utilisateur*/
             int var=0;
             System.out.println("vous avez 10 coups \n Saisissez une valeur entre 0 et 200:");
             var=sc.nextInt();
         
-            for (int i=0; i<=10;i++){
+            for (int i=0; i<=8;i++){
                 if (var<n){
                     System.out.println("Trop petit");
                     System.out.println("Saisissez une valeur entre 0 et 200:");
