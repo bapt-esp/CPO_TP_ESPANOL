@@ -11,19 +11,19 @@ public class BouteilleBiere {
     double degreAlcool=0;
     String brasserie="";
     boolean ouverte =false;
-    public void lireEtiquette() {
+    /*public void lireEtiquette() {
         System.out.println("Bouteille de " + Nom +" (" + degreAlcool +" degres) \nBrasserie : " + brasserie ) ;
-    }
-    public void Décapsuler(){
-        boolean resultat=false;
+    }*/
+    public boolean Décapsuler(){
         if (ouverte==false){
             ouverte=true;
-            resultat=true;
-            System.out.println("La biere a ete ouverte "+ resultat);
+            
+            return true;
         }
-        else if (ouverte==true){
-            resultat=false;
-            System.out.println("La bouteille est deja ouverte "+resultat);
+       
+        else {
+            
+            return false;
         }
     }
 
@@ -32,5 +32,13 @@ public class BouteilleBiere {
     degreAlcool = unDegre;
     brasserie = uneBrasserie;
     ouverte = false;
+    }
+    @Override
+    public String toString() {
+        String chaine_a_retourner;
+        chaine_a_retourner = Nom + " (" + degreAlcool + " degres)Ouverte ? ";
+        if (ouverte == true ) chaine_a_retourner += "oui" ;
+        else chaine_a_retourner += "non" ;
+        return chaine_a_retourner ;
     }
 }
