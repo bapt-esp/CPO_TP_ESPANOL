@@ -15,6 +15,7 @@ public class fenetre1 extends javax.swing.JFrame {
      */
     public fenetre1() {
         initComponents();
+        résultat.setVisible(false);
     }
 
     /**
@@ -96,6 +97,7 @@ public class fenetre1 extends javax.swing.JFrame {
         String prenom= zoneSaisie.getText();
         System.out.println("prenom trrouvé "+prenom);
         résultat.setText("bonjour "+prenom);
+        résultat.setVisible(true);
     }//GEN-LAST:event_boutonActionPerformed
 
     /**
