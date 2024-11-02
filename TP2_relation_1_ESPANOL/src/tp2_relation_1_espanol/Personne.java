@@ -26,11 +26,18 @@ public class Personne {
     }
     
     public boolean ajouter_voiture( Voiture voiture_a_ajouter) {
-        if (voiture_a_ajouter.Proprietaire==null){
+        if (voiture_a_ajouter.Proprietaire!=null){
             return false;
         }
         else if(nbVoitures==3){
             return false;
+        }
+        else {
+            liste_voitures[nbVoitures]= voiture_a_ajouter;
+            nbVoitures+=1;
+            voiture_a_ajouter.Proprietaire = this ; 
+            return true;
+            
         }
     }
 }
