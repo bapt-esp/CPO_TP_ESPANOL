@@ -8,16 +8,16 @@ package com.mycompany.tp3_heroic_fantasy_espanol;
  *
  * @author bapti
  */
-public class Magicien extends personnage{
-    boolean confirmé= false;
-
-    public Magicien(String nom, int vie, boolean confirmé) {
+public class Guerrier extends personnage{
+    boolean acheval= false;
+    
+    public Guerrier(String nom, int vie, boolean acheval) {
         super(nom, vie);
-        this.confirmé= confirmé;
+        this.acheval=acheval;
     }
 
-    public void setConfirmé(boolean confirmé) {
-        this.confirmé = confirmé;
+    public void setAcheval(boolean acheval) {
+        this.acheval = acheval;
     }
     
 }
