@@ -5,6 +5,7 @@
 
 package com.mycompany.tp3_heroic_fantasy_espanol;
 
+import Personnages.personnage;
 import Personnages.Magicien;
 import Personnages.Guerrier;
 import Armes.Epee;
@@ -20,7 +21,7 @@ GRP: TDB
 public class TP3_Heroic_Fantasy_ESPANOL {
 
     public static void main(String[] args) {
-        Epee Excalibur = new Epee ("Excalibur",7,5);
+        /*Epee Excalibur = new Epee ("Excalibur",7,5);
         Epee Durandal = new Epee ("Durandal",4,7);
         Baton Chêne = new Baton ("Chêne",4,5);
         Baton Charme = new Baton ("Charme",5,6);
@@ -35,7 +36,8 @@ public class TP3_Heroic_Fantasy_ESPANOL {
         Sac.add(Charme);
         String result1 = Sac.toString();
         System.out.println(result1);*/
-        Magicien Gandalf= new Magicien("Gandalf",65,true);
+        
+        /*Magicien Gandalf= new Magicien("Gandalf",65,true);
         Magicien Garcimore= new Magicien("Garcimore",44,false);
         Guerrier Conan = new Guerrier ("Conan",78, false);
         Guerrier Lannister= new Guerrier ("Lanister",45,true);
@@ -45,7 +47,23 @@ public class TP3_Heroic_Fantasy_ESPANOL {
         troupe.add(Lannister);
         troupe.add(Conan);
         String result2 = troupe.toString();
-        System.out.println(result2);
+        System.out.println(result2);*/
+        
+        Guerrier Paladin = new Guerrier ("Jayce",70,false);
+        Magicien Sorcier = new Magicien ("Viktor",50,false);
+        Epee Hexelame = new Epee ("Hexelame",100,20);
+        Epee Couteaux = new Epee ("Couteaux",4,7);
+        Epee Lancenoxienne= new Epee("Lance Noxienne",3,10);
+        Baton Canne = new Baton ("Canne",2,2);
+        Baton Spectre = new Baton ("Spectre d'arcane",1000,10);
+        Baton Marteaux= new Baton ("Marteau Hexteque",7,20);
+        
+        
+        
+        Paladin.équipearme(Hexelame);
+            
+        Sorcier.équipearme(Spectre);
+
     }
 }
     

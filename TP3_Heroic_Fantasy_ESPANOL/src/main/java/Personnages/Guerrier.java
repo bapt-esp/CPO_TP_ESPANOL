@@ -22,7 +22,7 @@ public class Guerrier extends personnage{
 
     @Override
     public String toString() {
-        return "Guerrier{"+"nom="+nom+", vie="+vie + ", acheval=" + acheval + '}';
+        return "Guerrier{"+"nom="+nom+", vie="+vie + ", acheval=" + acheval +" arme équipé= "+armeportée+  '}';
     }
     
 }

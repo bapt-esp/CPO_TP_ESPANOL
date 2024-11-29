@@ -15,8 +15,8 @@ public class Baton extends Armes{
 
     public Baton(String nom,int age,int nivattaque) {
         super(nom, nivattaque);
-        if(age>100){
-            this.age = 100;
+        if(age>1000){
+            this.age = 1000;
         }
         else{
             this.age = age;

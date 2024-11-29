@@ -22,7 +22,7 @@ public class Magicien extends personnage{
 
     @Override
     public String toString() {
-        return "Magicien{"+"nom="+nom+", vie="+vie + ", confirm\u00e9=" + confirmé + '}';
+        return "Magicien{"+"nom="+nom+", vie="+vie + ", confirm\u00e9=" + confirmé + " arme équipé= "+armeportée+ '}';
     }
     
     
