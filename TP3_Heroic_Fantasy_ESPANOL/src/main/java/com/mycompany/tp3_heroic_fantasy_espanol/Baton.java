@@ -4,6 +4,8 @@
  */
 package com.mycompany.tp3_heroic_fantasy_espanol;
 
+import com.mycompany.tp3_heroic_fantasy_espanol.Armes;
+
 /**
  *
  * @author bapti
