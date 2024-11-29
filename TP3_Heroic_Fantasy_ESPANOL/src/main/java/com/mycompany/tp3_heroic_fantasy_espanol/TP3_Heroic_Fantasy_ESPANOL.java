@@ -5,6 +5,9 @@
 
 package com.mycompany.tp3_heroic_fantasy_espanol;
 
+import Armes.Epee;
+import Armes.Baton;
+import Armes.Armes;
 import java.util.ArrayList;
 
 /*Nom: ESPANOL
