@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.tp3_heroic_fantasy_espanol;
+package Personnages;
 
 /**
  *
@@ -18,6 +18,11 @@ public class Guerrier extends personnage{
 
     public void setAcheval(boolean acheval) {
         this.acheval = acheval;
+    }
+
+    @Override
+    public String toString() {
+        return "Guerrier{"+"nom="+nom+", vie="+vie + ", acheval=" + acheval + '}';
     }
     
 }

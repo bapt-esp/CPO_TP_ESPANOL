@@ -5,6 +5,8 @@
 
 package com.mycompany.tp3_heroic_fantasy_espanol;
 
+import Personnages.Magicien;
+import Personnages.Guerrier;
 import Armes.Epee;
 import Armes.Baton;
 import Armes.Armes;
@@ -26,13 +28,24 @@ public class TP3_Heroic_Fantasy_ESPANOL {
         System.out.println(Durandal);
         System.out.println(Chêne);
         System.out.println(Charme);*/
-        ArrayList<Armes> Sac= new ArrayList<Armes>();
+        /*ArrayList<Armes> Sac= new ArrayList<Armes>();
         Sac.add(Excalibur);
         Sac.add(Durandal);
         Sac.add(Chêne);
         Sac.add(Charme);
         String result1 = Sac.toString();
-        System.out.println(result1);
+        System.out.println(result1);*/
+        Magicien Gandalf= new Magicien("Gandalf",65,true);
+        Magicien Garcimore= new Magicien("Garcimore",44,false);
+        Guerrier Conan = new Guerrier ("Conan",78, false);
+        Guerrier Lannister= new Guerrier ("Lanister",45,true);
+        ArrayList troupe= new ArrayList();
+        troupe.add(Gandalf);
+        troupe.add(Garcimore);
+        troupe.add(Lannister);
+        troupe.add(Conan);
+        String result2 = troupe.toString();
+        System.out.println(result2);
     }
 }
     
